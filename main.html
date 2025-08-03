@@ -1,31 +1,40 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #bigbox {
+            background-color: #f5f5f5;
+            height: auto; /* Changed to auto for flexibility */
+            padding: 20px;
+        }
+        .box { /* Changed from id to class for reusability */
+            border: 1px solid lightgray;
+            font-size: 14px; /* Increased font size for better readability */
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            margin-bottom: 20px;
+            background-color: white;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-	<div id="bigbox">
-		<h2>Testimonials</h2>
-		<div id="box-1">
-			<p>This product is amazing! I highly recommend it to anyone in need of a solution like this.</p>
-			<div>
-				<p style="padding:15px;"> - <i>John Doe</i></p>
-			</div>
-		</div>
-		<div id="box-2">
-			<p>I have been using this for a few weeks now and it has completely transformed my workflow.</p>
-			<div>
-				<p style="padding:15px;"> - <i>Jane Smith</i></p>
-			</div>
-		</div>
-	</div>
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <div id="bigbox">
+        <h2>Testimonials</h2>
+        <div class="box">
+            <p>This product is amazing! I highly recommend it to anyone in need of a solution like this.</p>
+            <div>
+                <p style="padding:15px;"> - <i>John Doe</i></p>
+            </div>
+        </div>
+        <div class="box">
+            <p>I have been using this for a few weeks now and it has completely transformed my workflow.</p>
+            <div>
+                <p style="padding:15px;"> - <i>Jane Smith</i></p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./script.js"></script>
 </body>
-
 </html>
